@@ -149,6 +149,7 @@ public class ForgetPasswordActivity extends BaseBussActivity implements View.OnC
                     // TODO Auto-generated method stub
                     iv_forget_eye1.setBackgroundResource(R.mipmap.login_code1);
                     et_forget_password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+
                     flag = false;
                 } else {
                     iv_forget_eye1.setBackgroundResource(R.mipmap.login_code2);
