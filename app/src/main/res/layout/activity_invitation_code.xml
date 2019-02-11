@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huancheng.reader.ui.activity.sub.InvitationCodeActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="输入好友邀请码您可以领取红包"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginTop="120dp"
+            android:gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/et_invitation_code"
+            android:layout_width="244dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            /><!--android:gravity="top"-->
+        <ImageView
+            android:id="@+id/btn_get_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/me_code_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            />
+        <TextView
+            android:id="@+id/tv_share_invitation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:text="向您的好友/推介人询问邀请码"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <com.huancheng.reader.wegiht.CustomImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:borderRadius="50dp"
+            app:src="@mipmap/ic_launcher"
+            app:type="circle" />
+
+        <com.huancheng.reader.wegiht.CustomImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:src="@mipmap/ic_launcher"
+            app:borderRadius="30dp"
+
+            app:type="round" />
+
+        <com.huancheng.reader.wegiht.CustomImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:borderRadius="30dp"
+            app:src="@mipmap/ic_launcher"
+            app:type="round" />
+    </LinearLayout>
+
+</LinearLayout>

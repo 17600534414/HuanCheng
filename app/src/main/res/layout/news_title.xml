@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimaryDark">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_left_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/vip_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_news"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:padding="2dp"
+            >
+            <Button
+                android:id="@+id/btn_notice"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="通知消息"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_news_1"/>
+            <Button
+                android:id="@+id/btn_interaction"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="互动消息"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_news_1"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/gray">
+        <com.youth.banner.Banner
+            android:id="@+id/banner_find"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/iv_banner_find"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.youth.banner.Banner>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:background="@color/gray"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/sift_horn"
+                android:layout_marginLeft="40dp"
+                android:background="@color/white"/>
+            <com.huancheng.reader.wegiht.AutoVerticalScrollTextView
+                android:id="@+id/tv_vertical_advertisement_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="11sp"
+                android:textColor="@color/orange"
+                android:text="恭喜某某某成功获得60书卷"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                >
+
+            </com.huancheng.reader.wegiht.AutoVerticalScrollTextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

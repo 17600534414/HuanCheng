@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/province_line_border"
+            >
+            <RadioButton
+
+                android:id="@+id/tv_modern_romance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="现代言情"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_Ancient_romance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="古代言情"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:button="@null"
+                android:background="@drawable/bg_text_selector"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_fantasy_romance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="幻想言情"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_youth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="浪漫青春"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_girl_suspense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="女生悬疑"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_pure_love"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="纯爱小说"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+        </RadioGroup>
+        <LinearLayout
+            android:id="@+id/ll_content_woman"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

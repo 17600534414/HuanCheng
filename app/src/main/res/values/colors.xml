@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#ff0033</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green_shallow">#32bd63</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <!--蓝色-->
+    <color name="blue">#10239e</color>
+    <!--蓝色-->
+    <color name="blue_add_advert">#51a4f1</color>
+    <!--黄色-->
+    <color name="button_yellow">#f6e12d</color>
+    <!-- 浅灰色 -->
+    <color name="gray">#F5F5F5</color>
+    <!-- 中度灰色 -->
+    <color name="gray_min">#dddddd</color>
+    <!-- 浅灰色 -->
+    <color name="gray_middle">#cccccc</color>
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 半透明-->
+    <color name="translucent">#80000000</color>
+    <!-- 深灰色 -->
+    <color name="gray_deep">#808080</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="indigo">#4b0082</color> <!-- 靛青色 -->
+
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="gray_white">#F4F4F4</color>
+    <color name="orange_red">#FE5501</color>
+    <color name="orange">#F19825</color>
+    <color name="black">#000000</color>
+    <!-- 海军色 -->
+    <color name="navy">#000080</color>
+    <!-- 黄色 -->
+    <color name="yellow">#ffe100</color>
+    <!-- 中灰色 -->
+    <color name="gray_medium">#666666</color>
+    <!-- 绿色 -->
+    <color name="green">#53d042</color>
+    <!-- 浅绿色 -->
+    <color name="aqua">#CCCC33</color>
+    <!-- 中度绿色 -->
+    <color name="green_main">#32bd63</color>
+    <!-- 喇叭背景 -->
+    <color name="main_back">#FFECCE</color>
+    <!-- 喇叭字 -->
+    <color name="main_font">#ff0000</color>
+    <color name="cyan">#00ffff</color> <!-- 青色 -->
+
+    <color name="lime">#00ff00</color> <!-- 酸橙色 -->
+
+    <color name="text_color_gray">#b5b5b5</color>
+</resources>

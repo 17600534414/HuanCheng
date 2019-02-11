@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue">
+        <ImageView
+            android:id="@+id/iv_left_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/vip_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center_vertical"
+
+            >
+            <RadioButton
+                android:id="@+id/rb_man_classification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@drawable/bg_find_radiobutton"
+                android:gravity="center"
+                android:text="男生"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textColorHint="@color/gray_deep"
+                android:checked="false"
+                />
+            <RadioButton
+                android:id="@+id/rb_woman_classification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@drawable/bg_find_radiobutton"
+                android:gravity="center"
+                android:textColorHint="@color/gray_deep"
+                android:text="女生"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                />
+            <!--android:background="@drawable/bg_find_radiobutton"-->
+        </RadioGroup>
+        <ImageView
+            android:id="@+id/iv_right_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_code2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_classification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

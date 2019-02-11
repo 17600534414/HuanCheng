@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/province_line_border"
+            >
+            <RadioButton
+
+                android:id="@+id/tv_popularity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="人气新书榜"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_conscience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="良心完结榜"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:button="@null"
+                android:background="@drawable/bg_text_selector"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_potential"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="潜力飙升榜"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_goddess_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="女神热搜榜"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_malegod_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="男神热搜榜"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <RadioButton
+
+                android:id="@+id/tv_popular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="热门追更棒"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_text_selector"
+                android:button="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+        </RadioGroup>
+        <LinearLayout
+            android:id="@+id/ll_content_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
