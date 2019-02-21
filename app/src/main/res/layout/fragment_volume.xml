@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
 
-</android.support.constraint.ConstraintLayout>
+
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@mipmap/make_book">
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="500dp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/btn_activity_task"
+            style="@style/activity"
+            android:background="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/bg_activity_1_selector"
+            android:layout_marginLeft="10dp"
+
+             />
+
+        <RadioButton
+            android:id="@+id/btn_activity_activity"
+            style="@style/activity"
+            android:background="@null"
+            android:drawableTop="@drawable/bg_activity_selector"
+            android:checked="true"
+            android:layout_marginRight="10dp"
+
+            />
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/ll_activity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

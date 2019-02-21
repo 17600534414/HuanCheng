@@ -209,7 +209,6 @@ public class BookShlefFragment extends BaseFragment{
             timer = new Timer();
             timer.schedule(timerTask, 0, 1000);
             }
-
     }
 
     @Override

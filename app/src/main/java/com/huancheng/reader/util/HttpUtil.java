@@ -6,12 +6,11 @@ package com.huancheng.reader.util;
 
 public class HttpUtil {
 
-
-
     //测试
     public static final String HOST = "http://www.hzhuanqu.com:8086";
 //    public static final String SOCKET_HOST = "http://www.hzhuanqu.com:8086";
-    public static final String SOCKET_HOST = "http://192.168.1.7:8083";
+//    public static final String SOCKET_HOST = "http://192.168.1.14:8080";
+    public static final String SOCKET_HOST = "http://192.168.1.4:8083";
 //public static final String SOCKET_HOST = "http://47.99.94.190:8083";
     //手机登录
     public static final String LOGIN = "/novel/user/telLogin";

@@ -129,17 +129,35 @@ public class WomanChannelActivity extends BaseBussActivity {
                 break;
             case R.id.iv_right_title_bar:
                 break;
-            case R.id.tv_woman_modernromance:
+            case R.id.tv_woman_modernromance://现代言情更多
+                Bundle bundle1 = new Bundle();
+                bundle1.putString("manbookmore","都市言情");
+                startActivity(ManBookMoreActivity.class,bundle1);
                 break;
-            case R.id.tv_woman_ancientromance:
+            case R.id.tv_woman_ancientromance://古装言情更多
+                Bundle bundle2 = new Bundle();
+                bundle2.putString("manbookmore","古装言情");
+                startActivity(ManBookMoreActivity.class,bundle2);
                 break;
-            case R.id.tv_woman_fantasyromance:
+            case R.id.tv_woman_fantasyromance://幻想言情更多
+                Bundle bundle3 = new Bundle();
+                bundle3.putString("manbookmore","幻想言情");
+                startActivity(ManBookMoreActivity.class,bundle3);
                 break;
-            case R.id.tv_woman_youth:
+            case R.id.tv_woman_youth://浪漫青春更多
+                Bundle bundle4 = new Bundle();
+                bundle4.putString("manbookmore","浪漫青春");
+                startActivity(ManBookMoreActivity.class,bundle4);
                 break;
-            case R.id.tv_woman_girlsuspense:
+            case R.id.tv_woman_girlsuspense://女生悬疑更多
+                Bundle bundle5 = new Bundle();
+                bundle5.putString("manbookmore","悬疑小说");
+                startActivity(ManBookMoreActivity.class,bundle5);
                 break;
-            case R.id.tv_woman_purelove:
+            case R.id.tv_woman_purelove://纯爱小说更多
+                Bundle bundle6 = new Bundle();
+                bundle6.putString("manbookmore","情感小说");
+                startActivity(ManBookMoreActivity.class,bundle6);
                 break;
         }
     }

@@ -134,19 +134,40 @@ public class ManChannelActivity extends BaseBussActivity {
                 break;
             case R.id.iv_right_title_bar:
                 break;
-            case R.id.tv_man_urban:
+            case R.id.tv_man_urban://现代都市更多
+                Bundle bundle1 = new Bundle();
+                bundle1.putString("manbookmore","都市小说");
+                startActivity(ManBookMoreActivity.class,bundle1);
                 break;
-            case R.id.tv_man_fantasy:
+            case R.id.tv_man_fantasy://玄幻奇幻更多
+                Bundle bundle2 = new Bundle();
+                bundle2.putString("manbookmore","玄幻奇幻");
+                startActivity(ManBookMoreActivity.class,bundle2);
                 break;
-            case R.id.tv_man_knigh_errant:
+            case R.id.tv_man_knigh_errant://武侠仙侠更多
+                Bundle bundle3 = new Bundle();
+                bundle3.putString("manbookmore","仙侠武侠");
+                startActivity(ManBookMoreActivity.class,bundle3);
                 break;
-            case R.id.tv_man_history:
+            case R.id.tv_man_history://军事历史更多
+                Bundle bundle4 = new Bundle();
+                bundle4.putString("manbookmore","历史军事");
+                startActivity(ManBookMoreActivity.class,bundle4);
                 break;
-            case R.id.tv_man_novel:
+            case R.id.tv_man_novel://科幻末日更多
+                Bundle bundle5 = new Bundle();
+                bundle5.putString("manbookmore","科幻末世");
+                startActivity(ManBookMoreActivity.class,bundle5);
                 break;
-            case R.id.tv_man_suspense:
+            case R.id.tv_man_suspense://悬疑小说更多
+                Bundle bundle6 = new Bundle();
+                bundle6.putString("manbookmore","悬疑小说");
+                startActivity(ManBookMoreActivity.class,bundle6);
                 break;
-            case R.id.tv_man_game:
+            case R.id.tv_man_game://游戏竞技更多
+                Bundle bundle7 = new Bundle();
+                bundle7.putString("manbookmore","游戏竞技");
+                startActivity(ManBookMoreActivity.class,bundle7);
                 break;
         }
     }

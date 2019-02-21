@@ -98,6 +98,7 @@ public class EndBookAllActivity extends BaseBussActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.iv_left_title_bar:
+                onBackPressed();
                 break;
             case R.id.iv_right_title_bar:
                 break;

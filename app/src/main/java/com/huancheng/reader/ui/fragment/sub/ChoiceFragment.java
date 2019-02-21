@@ -25,12 +25,14 @@ import com.huancheng.reader.HomePageBookBean;
 import com.huancheng.reader.R;
 import com.huancheng.reader.bean.TypePublicBean;
 import com.huancheng.reader.bean.TypePublicBookBean;
+import com.huancheng.reader.ui.activity.sub.BookClassIficationActivity;
 import com.huancheng.reader.ui.activity.sub.BookInfoActivity;
 import com.huancheng.reader.ui.activity.sub.BookListActivity;
 import com.huancheng.reader.ui.activity.sub.EndBookActivity;
 import com.huancheng.reader.ui.activity.sub.EndBookAllActivity;
 import com.huancheng.reader.ui.activity.sub.ManActivity;
 import com.huancheng.reader.ui.activity.sub.ManChannelActivity;
+import com.huancheng.reader.ui.activity.sub.NewBookMoreActivity;
 import com.huancheng.reader.ui.activity.sub.SearchActivity;
 import com.huancheng.reader.ui.activity.sub.WomanActivity;
 import com.huancheng.reader.ui.activity.sub.WomanChannelActivity;
@@ -252,26 +254,38 @@ public class ChoiceFragment extends BaseFragment {
             case R.id.tv_vertical_advertisement://纵向滚动式广告
 
                 break;
-            case R.id.tv_newbook://更多
+            case R.id.tv_newbook://新书速递更多
+                Bundle bundle = new Bundle();
+                bundle.putString("bookmore","新书速递");
+                startActivity(NewBookMoreActivity.class,bundle);
 
                 break;
-            case R.id.tv_must_see://更多
+            case R.id.tv_must_see://人气推荐更多
+                Bundle bundle1 = new Bundle();
+                bundle1.putString("bookmore","人气推荐");
+                startActivity(NewBookMoreActivity.class,bundle1);
 
                 break;
-            case R.id.tv_recommend://更多
-
+            case R.id.tv_recommend://主编推荐更多
+                Bundle bundle2 = new Bundle();
+                bundle2.putString("bookmore","主编推荐");
+                startActivity(NewBookMoreActivity.class,bundle2);
                 break;
-            case R.id.tv_edit://更多
-
+            case R.id.tv_edit://畅读王牌更多
+                Bundle bundle3 = new Bundle();
+                bundle3.putString("bookmore","畅读王牌");
+                startActivity(NewBookMoreActivity.class,bundle3);
                 break;
-            case R.id.tv_trump://更多
-
+            case R.id.tv_trump://畅读必看更多
+                Bundle bundle4 = new Bundle();
+                bundle4.putString("bookmore","畅读必看");
+                startActivity(NewBookMoreActivity.class,bundle4);
                 break;
             case R.id.ll_recommend://人气推荐第一条
                 typePublicBean = recommendlist.get(3);//人气推荐
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("typePublicBean",typePublicBean);
-                startActivity(BookInfoActivity.class,bundle);
+                Bundle bundle5 = new Bundle();
+                bundle5.putSerializable("typePublicBean",typePublicBean);
+                startActivity(BookInfoActivity.class,bundle5);
                 break;
 
         }

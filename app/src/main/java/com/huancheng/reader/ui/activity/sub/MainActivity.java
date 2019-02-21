@@ -99,8 +99,8 @@ public class MainActivity extends BaseBussActivity implements View.OnClickListen
     TextView tvNightvision;
     @BindView(R.id.main_left_drawer_layout)
     RelativeLayout mainLeftDrawerLayout;
-    @BindView(R.id.main_right_drawer_layout)
-    RelativeLayout mainRightDrawerLayout;
+//    @BindView(R.id.main_right_drawer_layout)
+//    RelativeLayout mainRightDrawerLayout;
     @BindView(R.id.main_drawer_layout)
     DrawerLayout mainDrawerLayout;
     @BindView(R.id.rl_sign)
@@ -143,7 +143,7 @@ public class MainActivity extends BaseBussActivity implements View.OnClickListen
         //左边菜单
         main_left_drawer_layout = (RelativeLayout) findViewById(R.id.main_left_drawer_layout);
         //右边菜单
-        main_right_drawer_layout = (RelativeLayout) findViewById(R.id.main_right_drawer_layout);
+//        main_right_drawer_layout = (RelativeLayout) findViewById(R.id.main_right_drawer_layout);
         initEvent();
         initDefultView();
     }
@@ -283,15 +283,15 @@ public class MainActivity extends BaseBussActivity implements View.OnClickListen
     }
 
     // 右边菜单开关事件
-    public void openRightLayout(View view) {
-        if (drawerLayout.isDrawerOpen(main_right_drawer_layout)) {
-            drawerLayout.closeDrawer(main_right_drawer_layout);
-        } else {
-            drawerLayout.openDrawer(main_right_drawer_layout);
-        }
-    }
+//    public void openRightLayout(View view) {
+//        if (drawerLayout.isDrawerOpen(main_right_drawer_layout)) {
+//            drawerLayout.closeDrawer(main_right_drawer_layout);
+//        } else {
+//            drawerLayout.openDrawer(main_right_drawer_layout);
+//        }
+//    }
 
-    @OnClick({R.id.content, R.id.btn_bookshlef, R.id.btn_choice, R.id.btn_volume, R.id.btn_classify, R.id.btn_bookreview, R.id.rg_tab, R.id.iv_hean, R.id.tv_name, R.id.tv_vip, R.id.te_share, R.id.tv_volume, R.id.tv_flower, R.id.tv_sign, R.id.image1, R.id.tv_myvip, R.id.tv_recharge, R.id.image2, R.id.rl_myaccount, R.id.image4, R.id.rl_invitationcode, R.id.image5, R.id.rl_myfriend, R.id.image6, R.id.rl_collection, R.id.image7, R.id.rl_news, R.id.te_setup, R.id.tv_nightvision, R.id.main_left_drawer_layout, R.id.main_right_drawer_layout, R.id.main_drawer_layout, R.id.rl_sign, R.id.rl_myfriends})
+    @OnClick({R.id.content, R.id.btn_bookshlef, R.id.btn_choice, R.id.btn_volume, R.id.btn_classify, R.id.btn_bookreview, R.id.rg_tab, R.id.iv_hean, R.id.tv_name, R.id.tv_vip, R.id.te_share, R.id.tv_volume, R.id.tv_flower, R.id.tv_sign, R.id.image1, R.id.tv_myvip, R.id.tv_recharge, R.id.image2, R.id.rl_myaccount, R.id.image4, R.id.rl_invitationcode, R.id.image5, R.id.rl_myfriend, R.id.image6, R.id.rl_collection, R.id.image7, R.id.rl_news, R.id.te_setup, R.id.tv_nightvision, R.id.main_left_drawer_layout, R.id.main_drawer_layout, R.id.rl_sign, R.id.rl_myfriends})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.rg_tab:
@@ -321,8 +321,6 @@ public class MainActivity extends BaseBussActivity implements View.OnClickListen
                 if (volumeFragment == null) {
                     volumeFragment = new VolumeFragment(_context, R.layout.fragment_volume);
                     ft.add(R.id.content, volumeFragment);
-
-                    //已经跳过去了，但是领书卷字体没变色
                 } else {
                     ft.show(volumeFragment);
                 }

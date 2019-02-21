@@ -73,7 +73,9 @@
         <activity android:name=".ui.activity.sub.BookClassIficationActivity" />
         <activity android:name=".ui.activity.sub.ManChannelActivity" />
         <activity android:name=".ui.activity.sub.WomanChannelActivity" />
-        <activity android:name=".ui.activity.sub.EndBookAllActivity"></activity>
+        <activity android:name=".ui.activity.sub.EndBookAllActivity" />
+        <activity android:name=".ui.activity.sub.NewBookMoreActivity" />
+        <activity android:name=".ui.activity.sub.ManBookMoreActivity"></activity>
     </application>
 
 </manifest>
